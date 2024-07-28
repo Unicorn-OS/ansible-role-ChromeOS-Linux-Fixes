@@ -1,0 +1,7 @@
+---
+# https://github.com/ansible/ansible/issues/27643
+- name: Fix Docker pull with 'python-requests'
+  ansible.builtin.apt:
+    pkg:
+    - python3-requests
+  become: true

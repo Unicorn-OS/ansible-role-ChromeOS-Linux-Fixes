@@ -1,0 +1,5 @@
+---
+- name: List of Fixes
+  include_tasks: "{{ item }}.yml"
+  loop:
+  - Docker
